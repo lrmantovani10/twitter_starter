@@ -5,9 +5,7 @@ export default function TweetInput(props) {
   return (
     <div className="tweet-textarea">
       <AvatarIcon />
-
-      <textarea name="new-tweet-input" type="text" placeholder="What's Happening?"></textarea>
-
+      <textarea value={props.value} onChange={props.handleOnChange} name="new-tweet-input" type="text" placeholder="What's Happening?"></textarea>
       <SmileIcon />
     </div>
   )
